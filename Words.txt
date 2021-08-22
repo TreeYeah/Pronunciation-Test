@@ -1,4 +1,4 @@
-195
+207
 1 挨骂 ái āi ǎi ài
 1 熬汤 āo áo zhǔ ào
 1 剥皮 bāo bō báo pō
@@ -6,7 +6,6 @@
 1 瞠目结舌 chēng chǎng tǎng dèng
 1 乘机 chéng chèn céng chèng
 1 惩罚 chéng chěng céng cěng
-1 橙子 chéng céng chén cén
 1 炽热 chì zhì cì zì
 1 憧憬 chōng chóng cōng cóng
 1 处理 chǔ chù cǔ cù
@@ -34,6 +33,8 @@
 1 蛤蜊 gé hā há gǎ
 1 和面 huó huò hé hú
 1 和稀泥 huò huó hé hú
+1 晃眼 huǎng huàng huǎn huàn
+1 诲人不倦 huì huǐ měi jiào
 1 混合 hùn hún hǔn hūn
 1 混水摸鱼 hún hùn hǔn hūn
 1 混浊 hùn hún hǔn hūn
@@ -49,7 +50,7 @@
 1 镌刻 juān zuàn juàn qìn
 1 倔强 jué juè juē juě
 1 菌类 jūn jùn jǔn jún
-1 卡壳 qiǎ kǎ qià kà
+1 卡顿 qiǎ kǎ qià kà
 1 框架 kuàng kuāng kuàn kuān
 1 唠叨 láo lāo lǎo lào
 1 镂空 lòu lóu lǒu lōu
@@ -63,10 +64,12 @@
 1 拧毛巾 níng nín nǐng nǐn
 1 癖好 pǐ pì pī pí
 1 剽窃 piāo piáo piǎo piào
+1 祈福 qí qǐ qì qī
 1 迄今 qì qǐ zhì qí
 1 潜在 qián qiǎn qiàn qiān
 1 悄无声息 qiǎo qiào qiāo qiáo
 1 翘首 qiáo qiào qiāo qiǎo
+1 曲线 qū qǔ qiǔ qiú
 1 仍然 réng rēng rén rēn
 1 散落 sàn sǎn shàn shǎn
 1 似的 shì sì yǐ xì
@@ -94,6 +97,7 @@
 1 召开 zhào zhāo zhǎo shào
 1 着想 zhuó zháo zhāo zhe
 1 挣脱 zhèng zhēng zhèn zhēn
+1 吱声 zī zhi zhī zhí
 1 脂肪 zhī zhǐ zī zǐ
 1 指甲 zhǐ zhī zǐ zī
 1 质量 zhì zhǐ zhī zhí
@@ -121,6 +125,7 @@
 2 出血 xiě xuě xuè xiè
 2 粗犷 guǎng kuǎng kuàng guàng
 2 打嗝 gé gě gè gē
+2 打量 liang liáng liàng liāng
 2 打烊 yàng yáng xiáng xiàng
 2 单挑 tiǎo tiāo tiáo tiào
 2 颠簸 bǒ bō bò bó
@@ -144,12 +149,14 @@
 2 解剖 pōu pāo pēi bèi
 2 精髓 suǐ suì suí suī
 2 拘泥 nì ní lì lí
+2 魁梧 wu wú wǔ wù
 2 累赘 zhui zhuì zhuí zhuǐ
 2 连累 lěi lèi léi lēi
 2 两栖 qī xī chī sī
 2 逻辑 jí ji jī jǐ
 2 闷闷不乐 mèn men mēn měn
 2 勉强 qiǎng qiáng jiàng qiāng
+2 木匣子 xiá jiā jiá jiǎ
 2 内讧 hòng gàng gāng fèi
 2 内疚 jiù jiū jiǔ jiu
 2 瓶颈 jǐng gěng jìng jīng
@@ -158,6 +165,7 @@
 2 请帖 tiě tiè tiē tie
 2 确凿 záo zuó zuò zháo
 2 乳臭未干 xiù chòu còu xiǔ
+2 上蹿下跳 cuān cuàn chuān chuàn
 2 手腕 wàn wǎn wān wan
 2 苏打 dá da dǎ dā
 2 汤匙 chí shí shi shì
@@ -180,12 +188,16 @@
 2 针灸 jiǔ jiū jiù zhì
 2 正当防卫 dàng dāng duāng dān
 2 纸屑 xiè xuè xè xèi
+2 紫禁城 jìn jīn jìng jīng
 2 字帖 tiè tiě tiē tié
 2 坐骑 qí jì jí qì
 3 汗流浃背 jiā jiá xiá xié
+3 黑黢黢 qū jùn dòng xū
 3 开花结果 jiē jié jiě jiè
 3 牛皮癣 xuǎn xiǎn xiān xuān
 3 人才济济 jǐ jí jì jī
+3 湿淋淋 lín līn lin líng
+3 晕头转向 zhuàn zhuǎn zuàn zuǎn
 3 芝麻糊 hù hú hǔ hū
 4 吹毛求疵 cī cì chī chì
 4 屡见不鲜 xiān xiǎn xiàn xián
