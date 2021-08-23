@@ -1,4 +1,4 @@
-207
+208
 1 挨骂 ái āi ǎi ài
 1 熬汤 āo áo zhǔ ào
 1 剥皮 bāo bō báo pō
@@ -75,6 +75,7 @@
 1 似的 shì sì yǐ xì
 1 说服 shuō suō shuì suì
 1 塑料 sù suò shù shuò
+1 统统 tǒng tōng tūn tǎng
 1 骰子 tóu shǎi sǎi tōu
 1 湍急 tuān chuǎn chuǎi tān
 1 毋庸置疑 wú wù wū wǔ
