@@ -1,4 +1,4 @@
-208
+221
 1 挨骂 ái āi ǎi ài
 1 熬汤 āo áo zhǔ ào
 1 剥皮 bāo bō báo pō
@@ -20,6 +20,7 @@
 1 踮脚 diǎn diān diàn dián
 1 咄咄逼人 duō qū zhuó duó
 1 嗯（～？什么？） ńg én éng ég
+1 梵高 fàn fán lín lìn
 1 绯闻 fēi fěi féi fèi
 1 氛围 fēn fèn fēng fèng
 1 符合 fú fù fǔ fū
@@ -51,17 +52,20 @@
 1 倔强 jué juè juē juě
 1 菌类 jūn jùn jǔn jún
 1 卡顿 qiǎ kǎ qià kà
+1 嗑瓜子 kè kē ké kě
 1 框架 kuàng kuāng kuàn kuān
 1 唠叨 láo lāo lǎo lào
 1 镂空 lòu lóu lǒu lōu
 1 埋怨 mán mái māi mān
 1 焖饭 mèn mēn měn mén
 1 蒙古 měng méng měn mén
+1 秘鲁 bì mì tì pì 
 1 模板 mú mó móu máo
 1 昵称 nì ní nī nǐ
 1 拈花惹草 niān zhān nián tiē
 1 宁愿 nìng níng zhù nǐng
 1 拧毛巾 níng nín nǐng nǐn
+1 劈腿 pǐ pī pí pì
 1 癖好 pǐ pì pī pí
 1 剽窃 piāo piáo piǎo piào
 1 祈福 qí qǐ qì qī
@@ -89,6 +93,7 @@
 1 噱头 xué xuè háo xuē
 1 血肉 xuè xiě xuě xiè
 1 荨麻 qián xún xùn qiàn
+1 亚军 yà yǎ yā yá
 1 奄奄一息 yǎn yán yàn yān
 1 应该 yīng yìng yīn yìn
 1 应届 yīng yìng yīn yìn
@@ -111,6 +116,7 @@
 1 作死 zuò zuō zuó zuǒ
 2 按捺 nà nài nǎi nǎ
 2 芭蕾 lěi léi lèi lēi
+2 白炽灯 chì zhì zhī chī
 2 包庇 bì pì bǐ pǐ
 2 报道 dào dǎo dao gào
 2 卑鄙 bǐ bì bí bī
@@ -129,6 +135,7 @@
 2 打量 liang liáng liàng liāng
 2 打烊 yàng yáng xiáng xiàng
 2 单挑 tiǎo tiāo tiáo tiào
+2 蛋挞 tà tǎ ta tā
 2 颠簸 bǒ bō bò bó
 2 掉色 shǎi sǎi sè shè
 2 洞穴 xué xuè xue xuě
@@ -141,6 +148,7 @@
 2 关卡 qiǎ kǎ ka qia
 2 蛤蜊 lí li lì lī
 2 烘焙 bèi péi pèi béi
+2 厚薄 bó báo bào bo
 2 怀揣 chuāi chuài zhuì chuǎi
 2 回溯 sù shuò suò sòu
 2 馄饨 tun tūn dun dùn
@@ -150,6 +158,7 @@
 2 解剖 pōu pāo pēi bèi
 2 精髓 suǐ suì suí suī
 2 拘泥 nì ní lì lí
+2 坎坷 kě kē gē gě
 2 魁梧 wu wú wǔ wù
 2 累赘 zhui zhuì zhuí zhuǐ
 2 连累 lěi lèi léi lēi
@@ -174,7 +183,9 @@
 2 体积 jī jí jì ji
 2 挑剔 tī tì tí tǐ
 2 停泊 bó bō pó pō
+2 未遂 suì suí suǐ suī
 2 下载 zài zǎi zhài zhǎi
+2 香菌 jùn jūn jún jǔn
 2 新冠病毒 guān guàn guǎn guán
 2 熏陶 táo tāo tǎo tao
 2 压轴 zhòu zhóu zòu zóu
@@ -204,6 +215,8 @@
 4 屡见不鲜 xiān xiǎn xiàn xián
 4 怒发冲冠 guān guàn guǎn guán
 4 硕果累累 léi lěi lēi lèi
+4 所向披靡 mǐ mí mi mì
 4 一本正经 jīng jǐng jing jīn
 4 一唱一和 hè hé huò huó
 4 自怨自艾 yì yǐ ài āi
+5 空欢喜一场 cháng chǎng cǎng chán
