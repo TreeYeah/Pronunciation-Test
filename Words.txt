@@ -1,4 +1,4 @@
-221
+224
 1 挨骂 ái āi ǎi ài
 1 熬汤 āo áo zhǔ ào
 1 剥皮 bāo bō báo pō
@@ -142,10 +142,12 @@
 2 对称 chèn chèng cèng chēng
 2 发霉 méi mēi mié miē
 2 发懵 měng mēng méng mēn
+2 返璞归真 pú pǔ fǔ bǔ
 2 各奔东西 bèn bēn bèng bēng
 2 孤零零 líng līng lín līn
 2 固执 zhi zhì zhī zì
 2 关卡 qiǎ kǎ ka qia
+2 果脯 fǔ pǔ pú fù
 2 蛤蜊 lí li lì lī
 2 烘焙 bèi péi pèi béi
 2 厚薄 bó báo bào bo
@@ -169,6 +171,7 @@
 2 木匣子 xiá jiā jiá jiǎ
 2 内讧 hòng gàng gāng fèi
 2 内疚 jiù jiū jiǔ jiu
+2 牛肚 dǔ dù zhǔ tǔ
 2 瓶颈 jǐng gěng jìng jīng
 2 牵强 qiǎng qiáng jiàng qiang
 2 强劲 jìng jìn jǐn jǐng
