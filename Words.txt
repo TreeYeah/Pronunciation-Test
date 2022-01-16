@@ -1,4 +1,4 @@
-224
+225
 1 挨骂 ái āi ǎi ài
 1 熬汤 āo áo zhǔ ào
 1 剥皮 bāo bō báo pō
@@ -196,6 +196,7 @@
 2 一哄而散 hòng hōng hóng hān
 2 一匹马 pǐ pī pí pì
 2 一曝十寒 pù bào bù pū
+2 躯壳 qiào ké jǐ shì
 2 一应俱全 yīng yìng yīn yìn
 2 因为 wèi wéi wěi wēi
 2 友谊 yì yí yī yǐ
