@@ -54,7 +54,7 @@ struct testData
     int min;
 
     vector <string> incorrect;
-}test[256];
+}test[512];
 
 struct TimeData
 {
@@ -91,30 +91,30 @@ void color(int a)
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),a);
 }
 
-void go(float x,float y)  //¹â±êÒÆ¶¯º¯Êı£¬X±íÊ¾ºá×ø±ê£¬Y±íÊ¾×İ×ø±ê¡£
+void go(float x,float y)  //å…‰æ ‡ç§»åŠ¨å‡½æ•°ï¼ŒXè¡¨ç¤ºæ¨ªåæ ‡ï¼ŒYè¡¨ç¤ºçºµåæ ‡ã€‚
 {
-    COORD coord;         //Ê¹ÓÃÍ·ÎÄ¼ş×Ô´øµÄ×ø±ê½á¹¹
-    coord.X = x*2;            //ÕâÀï½«intÀàĞÍÖµ´«¸øshort,²»¹ı³ÌĞòÖĞÉæ¼°µÄ×ø±êÖµ¾ù²»»á³¬¹ıshort·¶Î§
+    COORD coord;         //ä½¿ç”¨å¤´æ–‡ä»¶è‡ªå¸¦çš„åæ ‡ç»“æ„
+    coord.X = x*2;            //è¿™é‡Œå°†intç±»å‹å€¼ä¼ ç»™short,ä¸è¿‡ç¨‹åºä¸­æ¶‰åŠçš„åæ ‡å€¼å‡ä¸ä¼šè¶…è¿‡shortèŒƒå›´
     coord.Y = y;
-    HANDLE a = GetStdHandle(STD_OUTPUT_HANDLE);  //»ñµÃ±ê×¼Êä³ö¾ä±ú
-    SetConsoleCursorPosition(a,coord);         //ÒÔ±ê×¼Êä³öµÄ¾ä±úÎª²ÎÊıÉèÖÃ¿ØÖÆÌ¨¹â±ê×ø±ê
+    HANDLE a = GetStdHandle(STD_OUTPUT_HANDLE);  //è·å¾—æ ‡å‡†è¾“å‡ºå¥æŸ„
+    SetConsoleCursorPosition(a,coord);         //ä»¥æ ‡å‡†è¾“å‡ºçš„å¥æŸ„ä¸ºå‚æ•°è®¾ç½®æ§åˆ¶å°å…‰æ ‡åæ ‡
 }
 
 short getTone(string p)
 {
-    if(p.find("¨¡") != string::npos || p.find("¨­") != string::npos || p.find("¨±") != string::npos || p.find("¨µ") != string::npos || p.find("¨¥") != string::npos || p.find("¨©") != string::npos)
+    if(p.find("Ä") != string::npos || p.find("Å") != string::npos || p.find("Å«") != string::npos || p.find("Ç–") != string::npos || p.find("Ä“") != string::npos || p.find("Ä«") != string::npos)
     {
         return 1;
     }
-    if(p.find("¨½") != string::npos || p.find("¨®") != string::npos || p.find("¨²") != string::npos || p.find("¨¶") != string::npos || p.find("¨¦") != string::npos || p.find("¨ª") != string::npos || p.find("¨¢") != string::npos)
+    if(p.find("Å„") != string::npos || p.find("Ã³") != string::npos || p.find("Ãº") != string::npos || p.find("Ç˜") != string::npos || p.find("Ã©") != string::npos || p.find("Ã­") != string::npos || p.find("Ã¡") != string::npos)
     {
         return 2;
     }
-    if(p.find("¨¾") != string::npos || p.find("¨¯") != string::npos || p.find("¨³") != string::npos || p.find("¨·") != string::npos || p.find("¨§") != string::npos || p.find("¨«") != string::npos || p.find("¨£") != string::npos)
+    if(p.find("Åˆ") != string::npos || p.find("Ç’") != string::npos || p.find("Ç”") != string::npos || p.find("Çš") != string::npos || p.find("Ä›") != string::npos || p.find("Ç") != string::npos || p.find("Ç") != string::npos)
     {
         return 3;
     }
-    if(p.find("¨¿") != string::npos || p.find("¨°") != string::npos || p.find("¨´") != string::npos || p.find("¨¸") != string::npos || p.find("¨¨") != string::npos || p.find("¨¬") != string::npos || p.find("¨¤") != string::npos)
+    if(p.find("Ç¹") != string::npos || p.find("Ã²") != string::npos || p.find("Ã¹") != string::npos || p.find("Çœ") != string::npos || p.find("Ã¨") != string::npos || p.find("Ã¬") != string::npos || p.find("Ã ") != string::npos)
     {
         return 4;
     }
@@ -138,7 +138,7 @@ void readWords()
     {
         color(WARNING);
         go(1,1);
-        printf("¶ÁÈ¡ÌâÄ¿Ê§°Ü£¡\n");
+        printf("è¯»å–é¢˜ç›®å¤±è´¥ï¼\n");
         system("pause");
         return;
     }
@@ -148,7 +148,7 @@ void readWords()
     char w = ' ';
 
     unsigned seed = time(nullptr);
-    srand(seed);//ÉèÖÃËæ»úÊıÖÖ×Ó
+    srand(seed);//è®¾ç½®éšæœºæ•°ç§å­
 
     for(int i = 0; i < wordsN; i++)
     {
@@ -158,7 +158,7 @@ void readWords()
         if(word[i].which <= 0 || word[i].which > 9)
         {
             color(WARNING);
-            printf("¶ÁÈ¡ÌâÄ¿³ö´í£¡\n");
+            printf("è¯»å–é¢˜ç›®å‡ºé”™ï¼\n");
             system("pause");
             break;
         }
@@ -173,7 +173,7 @@ void readWords()
             infile >> j;
         word[i].correct = 0;
 
-        //´òÂÒ
+        //æ‰“ä¹±
         for(int j = 1; j <= 4; j++)
         {
             int target = getRand(0,3);
@@ -241,7 +241,7 @@ void startingAnimation()
 
 void start()
 {
-    SetConsoleTitle("ººÓï³£ÓÃ×Ö´Ê¶ÁÒô±ê×¼ĞÔ²âÊÔ");
+    SetConsoleTitle("æ±‰è¯­å¸¸ç”¨å­—è¯è¯»éŸ³æ ‡å‡†æ€§æµ‹è¯•");
     system("mode con cols=50 lines=16");
 
     startingAnimation();
@@ -250,7 +250,7 @@ void start()
 
     color(EMPHASIZE);
         go(5,6);
-        printf("  ººÓï³£ÓÃ×Ö´Ê¶ÁÒô±ê×¼ĞÔ²âÊÔ  ");
+        printf("  æ±‰è¯­å¸¸ç”¨å­—è¯è¯»éŸ³æ ‡å‡†æ€§æµ‹è¯•  ");
         go(5,5);
         printf("                              ");
         go(5,7);
@@ -263,9 +263,9 @@ void start()
 
     color(INSTRUCT);
         go(7,9);
-        for(int p = 0; p < strlen("ÊäÈëÄãµÄÃû×Ö£º"); p += 2)
+        for(int p = 0; p < strlen("è¾“å…¥ä½ çš„åå­—ï¼š"); p += 2)
         {
-            cout << "ÊäÈëÄãµÄÃû×Ö£º"[p] << "ÊäÈëÄãµÄÃû×Ö£º"[p+1];
+            cout << "è¾“å…¥ä½ çš„åå­—ï¼š"[p] << "è¾“å…¥ä½ çš„åå­—ï¼š"[p+1];
             Sleep(64);
         }
         cin >> name;
@@ -277,7 +277,7 @@ void start()
 
     color(EMPHASIZE);
         go(5,2);
-        printf("  ººÓï³£ÓÃ×Ö´Ê¶ÁÒô±ê×¼ĞÔ²âÊÔ  ");
+        printf("  æ±‰è¯­å¸¸ç”¨å­—è¯è¯»éŸ³æ ‡å‡†æ€§æµ‹è¯•  ");
         go(5,1);
         printf("                              ");
         go(5,3);
@@ -285,23 +285,23 @@ void start()
 
     color(TIP);
         go(4,5);
-        printf("[1][2][3][4]Ñ¡Ôñ");
+        printf("[1][2][3][4]é€‰æ‹©");
         go(4,6);
-        printf("[-][=]À´µ½ÉÏÒ»Ìâ/ÏÂÒ»Ìâ");
+        printf("[-][=]æ¥åˆ°ä¸Šä¸€é¢˜/ä¸‹ä¸€é¢˜");
         go(4,7);
-        printf("Ò»¹²ÓĞ%dµÀÌâÄ¿£¬Ô¤¼Æ%d·ÖÖÓ¿ÉÒÔÍê³É",wordsN,(wordsN * 3 + 59) / 60);
+        printf("ä¸€å…±æœ‰%dé“é¢˜ç›®ï¼Œé¢„è®¡%dåˆ†é’Ÿå¯ä»¥å®Œæˆ",wordsN,(wordsN * 3 + 59) / 60);
         go(4,8);
-        printf("ÔÊĞí°´[Esc]ÌáÇ°½»¾í");
+        printf("å…è®¸æŒ‰[Esc]æå‰äº¤å·");
 
     color(INSTRUCT);
         go(3,10);
-        printf("ÄãµÄ×÷´ğºÄÊ±»á±»¼ÇÂ¼£¬µ«¿ÉÒÔ[Space]ÔİÍ£");
+        printf("ä½ çš„ä½œç­”è€—æ—¶ä¼šè¢«è®°å½•ï¼Œä½†å¯ä»¥[Space]æš‚åœ");
         go(6,11);
-        printf("°´[T]¿É¿ªÆôÒôµ÷±æÊ¶¸¨ÖúÏµÍ³");
+        printf("æŒ‰[T]å¯å¼€å¯éŸ³è°ƒè¾¨è¯†è¾…åŠ©ç³»ç»Ÿ");
         go(6.5,12);
-        printf("Çë°´ÕÕ×Ô¼ºµÄµÚÒ»·´Ó¦×÷´ğ");
+        printf("è¯·æŒ‰ç…§è‡ªå·±çš„ç¬¬ä¸€ååº”ä½œç­”");
         go(9.5,13);
-        printf("°´ÈÎÒâ¼ü¿ªÊ¼");
+        printf("æŒ‰ä»»æ„é”®å¼€å§‹");
 
     if(getch() == 'T')
     {
@@ -314,13 +314,13 @@ void printTheChoice(int ch,int wordT,int COLOR)
     go(9,7 + ch);
     color(COLOR);
     if(ch == 0)
-        cout << "¢Ù " << word[wordT].choice[0];
+        cout << "â‘  " << word[wordT].choice[0];
     if(ch == 1)
-        cout << "¢Ú " << word[wordT].choice[1];
+        cout << "â‘¡ " << word[wordT].choice[1];
     if(ch == 2)
-        cout << "¢Û " << word[wordT].choice[2];
+        cout << "â‘¢ " << word[wordT].choice[2];
     if(ch == 3)
-        cout << "¢Ü " << word[wordT].choice[3];
+        cout << "â‘£ " << word[wordT].choice[3];
 
     if(!ToneAssist)
         return;
@@ -349,7 +349,7 @@ void testing()
 
     for(int t = 0; t < wordsN; ++t)
     {
-        SetConsoleTitle(("ººÓï³£ÓÃ×Ö´Ê¶ÁÒô±ê×¼ĞÔ²âÊÔ£¨" + to_string(t + 1) + " / " + to_string(wordsN) + "£©").c_str());
+        SetConsoleTitle(("æ±‰è¯­å¸¸ç”¨å­—è¯è¯»éŸ³æ ‡å‡†æ€§æµ‹è¯•ï¼ˆ" + to_string(t + 1) + " / " + to_string(wordsN) + "ï¼‰").c_str());
 
         go(9.5, 5);
         printWord(t);
@@ -409,7 +409,7 @@ void testing()
             {
                 int reduce = 0;
 
-                SetConsoleTitle(("ººÓï³£ÓÃ×Ö´Ê¶ÁÒô±ê×¼ĞÔ²âÊÔ£¨" + to_string(t + 1) + " / " + to_string(wordsN) + "£©¡ª¡ªÔİÍ£ÖĞ£¬°´[Space]¼ÌĞø¡£").c_str());
+                SetConsoleTitle(("æ±‰è¯­å¸¸ç”¨å­—è¯è¯»éŸ³æ ‡å‡†æ€§æµ‹è¯•ï¼ˆ" + to_string(t + 1) + " / " + to_string(wordsN) + "ï¼‰â€”â€”æš‚åœä¸­ï¼ŒæŒ‰[Space]ç»§ç»­ã€‚").c_str());
                 system("cls");
                 color(EMPHASIZE);
                     go(0,0);
@@ -419,7 +419,7 @@ void testing()
                            "                                                  "
                            "                                                  "
                            "                                                  "
-                           "            ººÓï³£ÓÃ×Ö´Ê¶ÁÒô±ê×¼ĞÔ²âÊÔ            "
+                           "            æ±‰è¯­å¸¸ç”¨å­—è¯è¯»éŸ³æ ‡å‡†æ€§æµ‹è¯•            "
                            "                                                  "
                            "                                                  "
                            "                                                  "
@@ -429,7 +429,7 @@ void testing()
 
                 color(TIP);
                     go(7, 14);
-                    printf("ÔİÍ£ÖĞ£¬°´[Space]¼ÌĞø¡£");
+                    printf("æš‚åœä¸­ï¼ŒæŒ‰[Space]ç»§ç»­ã€‚");
 
                 while(!kbhit() || kbhit() && getch() != 32)
                 {
@@ -450,7 +450,7 @@ void testing()
             system("cls");
             system("color F0");
             go(9.5, 5);
-            printf("°´[-]·µ»Ø¼ì²é£¬ÆäËü¼üÌá½»¡£");
+            printf("æŒ‰[-]è¿”å›æ£€æŸ¥ï¼Œå…¶å®ƒé”®æäº¤ã€‚");
             key = getch();
             if(key == '-')
                 t--;
@@ -460,7 +460,7 @@ void testing()
         system("color F0");
 
         CONSOLE_CURSOR_INFO cursor_info={1,0};
-        SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);//Òş²Ø¹â±ê
+        SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);//éšè—å…‰æ ‡
     }
     timing = time(nullptr) - timing - (delayTime + 500) / 1000;
 }
@@ -506,7 +506,7 @@ void history()
 {
     system("cls");
     system("color F0");
-    SetConsoleTitle("ÀúÊ·Êı¾İ£¨°´[Esc]·µ»Ø£©");
+    SetConsoleTitle("å†å²æ•°æ®ï¼ˆæŒ‰[Esc]è¿”å›ï¼‰");
 
     CONSOLE_CURSOR_INFO cursor_info={1,0};
     SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);
@@ -520,17 +520,17 @@ void history()
     for(int i = 1; i <= 31 + HistoryIncorrectWidth; i++)
         printf("  ");
     go(2,line - 2);
-    printf("ĞÕÃû");
+    printf("å§“å");
     go(8,line - 2);
-    printf("ÕıÈ·¸öÊı");
+    printf("æ­£ç¡®ä¸ªæ•°");
     go(13,line - 2);
-    printf("ÕıÈ·ÂÊ");
+    printf("æ­£ç¡®ç‡");
     go(17,line - 2);
-    printf("ËÙ¶È");
+    printf("é€Ÿåº¦");
     go(21,line - 2);
-    printf("Ìá½»Ê±¼ä");
+    printf("æäº¤æ—¶é—´");
     go(30,line - 2);
-    printf("´íÌâ");
+    printf("é”™é¢˜");
 
     color(INSTRUCT);
 
@@ -546,7 +546,7 @@ void history()
         printf("%.2lf%%",(double)test[i].correctN / test[i].wordsN * 100);
 
         go(17,line);
-        printf("%.1fs/¸ö", (float) test[i].timing / test[i].wordsN);
+        printf("%.1fs/ä¸ª", (float) test[i].timing / test[i].wordsN);
 
         go(21,line);
         printf("%.2d-%.2d-%.2d %.2d:%.2d",test[i].year,test[i].month,test[i].day,test[i].hour,test[i].min);
@@ -579,7 +579,7 @@ void result(bool saveOrNot)
 {
     system("cls");
     system("color F0");
-    SetConsoleTitle("²âÊÔ½áÊø¡£°´[Enter]²é×Ö£¬°´[Tab]²é¿´ÀúÊ·Êı¾İ¡£");
+    SetConsoleTitle("æµ‹è¯•ç»“æŸã€‚æŒ‰[Enter]æŸ¥å­—ï¼ŒæŒ‰[Tab]æŸ¥çœ‹å†å²æ•°æ®ã€‚");
 
     CONSOLE_CURSOR_INFO cursor_info={1,0};
     SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);
@@ -605,35 +605,35 @@ void result(bool saveOrNot)
 
     go(3,3);
     color(EMPHASIZE);
-    cout << "ĞÕÃû" ;
+    cout << "å§“å" ;
     color(INSTRUCT);
     cout << name;
 
     go(3,4);
     color(EMPHASIZE);
-    cout << "´ğ¶ÔÌâÊı" ;
+    cout << "ç­”å¯¹é¢˜æ•°" ;
     color(INSTRUCT);
-    cout << correctN << "£¨¹²" << completedN << "£©";
+    cout << correctN << "ï¼ˆå…±" << completedN << "ï¼‰";
 
     go(3,5);
     color(EMPHASIZE);
-    cout << "ÕıÈ·ÂÊ" ;
+    cout << "æ­£ç¡®ç‡" ;
     color(INSTRUCT);
     cout << ((double)correctN / completedN) * 100 << "%";
 
     go(3,6);
     color(EMPHASIZE);
-    cout << "ÓÃÊ±";
+    cout << "ç”¨æ—¶";
     color(INSTRUCT);
     cout << " ";
     if(timing + (delayTime + 500) / 1000 >= 60)
         cout << (timing + (delayTime + 500) / 1000) / 60 << "min ";
     cout << (timing + (delayTime + 500) / 1000) % 60 << "s";
-    printf(" (%.1fs/¸ö)", (float) timing / completedN);
+    printf(" (%.1fs/ä¸ª)", (float) timing / completedN);
 
     go(3,8);
     color(EMPHASIZE);
-    cout << "´íÎó´ÊÓï\n";
+    cout << "é”™è¯¯è¯è¯­\n";
     color(INSTRUCT);
     cout << "        ";
 
@@ -655,18 +655,18 @@ void result(bool saveOrNot)
             cout << "(" << word[i].choice[word[i].correct] << ")\n        ";
         }
     if(flag)
-        printf("ÎŞ£¡\n");
+        printf("æ— ï¼\n");
 
 
     color(TIP);
-    cout << "\n" << "    °´[-][=][Enter]²é×Ö£¬°´[Tab]²é¿´ÀúÊ·Êı¾İ¡£";
+    cout << "\n" << "    æŒ‰[-][=][Enter]æŸ¥å­—ï¼ŒæŒ‰[Tab]æŸ¥çœ‹å†å²æ•°æ®ã€‚";
 
     int key = 0,p = 0;
 
     if(0 != incorrectT.size())
     {
         go(1,9);
-        cout << "²éÑ¯>";
+        cout << "æŸ¥è¯¢>";
         while(key != '0' && p != incorrectT.size())
         {
             key = getch();
@@ -680,7 +680,7 @@ void result(bool saveOrNot)
                 go(1,10 + p);
                 cout << "     ";
                 go(1,9 + p);
-                cout << "²éÑ¯>";
+                cout << "æŸ¥è¯¢>";
             }
             if((key == '=' || key == '+') && p < incorrectT.size() - 1)
             {
@@ -688,7 +688,7 @@ void result(bool saveOrNot)
                 go(1,8 + p);
                 cout << "     ";
                 go(1,9 + p);
-                cout << "²éÑ¯>";
+                cout << "æŸ¥è¯¢>";
             }
             if(key == 9)
             {
